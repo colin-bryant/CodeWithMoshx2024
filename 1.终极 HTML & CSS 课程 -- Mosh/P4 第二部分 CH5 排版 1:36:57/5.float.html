@@ -18,10 +18,19 @@
         .tweet{
             border: 3px solid salmon;
         }
+        .tweet::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
         /* 
         clear 清除浮动  给需要清除的元素 设置 默认是none
 
-        父级浮动塌陷 因为子元素设置了浮动 脱离了文档流
+        父级浮动塌陷 因为子元素设置了浮动 脱离了文档流 
+        或者父级元素无法自动识别子元素的高度从而导致父元素高度为0 或者为其他子元素的高度 但是不包括浮动元素的高度
+        解决:
+        1. 浮动元素后添加一个div元素 并且添加一个类: clear:both  无意义的标签对于搜索引擎来说
+        2. 伪元素 .parent::after{ content:'';display:block;clear:both,}
         */
     </style>
 </head>
@@ -31,6 +40,7 @@
         <p>Lorem ipsum dolor sit amet.</p>
         <!-- <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit quo doloremque praesentium eligendi quibusdam ex temporibus, est, repellat cum delectus. Unde, aut facilis. Placeat, repellendus recusandae? Eveniet, saepe repudiandae
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellat nulla hic temporibus voluptatum, suscipit vitae! Vel sint, pariatur excepturi ea ipsam error nostrum consequuntur hic facere blanditiis at aperiam rerum quo nihil tempore, quidem accusamus incidunt nemo? Dicta saepe nobis, hic vel voluptatum ratione quaerat minus esse quis in obcaecati nam ullam assumenda asperiores, placeat sed provident! Nulla, nihil fugiat reiciendis sed doloremque cumque ducimus consequatur sint ullam consequuntur voluptates eveniet voluptas laboriosam tempore soluta modi ad accusamus ab commodi impedit quas quidem? Vitae laboriosam consequatur, natus, beatae dolores sapiente, optio voluptate minima debitis alias est quod accusantium nobis. Nemo, blanditiis ipsa ex praesentium quo perferendis quia nostrum fugiat maxime dolorum amet ratione molestias asperiores doloremque accusamus iste. Veniam dolor cum neque beatae repellat amet? Et ex culpa enim cumque soluta sed itaque numquam aliquam perferendis magni aperiam fuga, quaerat delectus quis repudiandae, pariatur assumenda illum. Odio .</p> -->
+        <!-- <div class="clear"></div> -->
     </article>
 </body>
 </html>
