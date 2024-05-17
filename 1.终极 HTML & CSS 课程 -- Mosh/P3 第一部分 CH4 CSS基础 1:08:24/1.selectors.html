@@ -11,7 +11,9 @@
     </style>
   </head>
   <body>
-    <!--                         权重  
+    <!--
+          
+        selector specificity   te z             权重  
         1.  style 行内            1000
         2.  #id                  100
         3.  class 属性 伪类选择器   10      a[href*="google"] a[href$=".com"]  a[href^="https"]
@@ -46,7 +48,9 @@
         a::first-letter 第一个字母
         a::first-line  第一行
         a::selection 鼠标选中的内容
-        a::before {content:'...'}
+        a::before {content:'...',display:block}
+        a::after {content:'...',display:block}
+
        -->
     <section>1.Lorem ipsum dolor sit amet.</section>
     <div>3.Lorem ipsum dolor sit amet.</div>
