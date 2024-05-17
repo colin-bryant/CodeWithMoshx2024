@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>box model</title>
     <style>
         *{
+          /* 
+          默认不设置的情况下 是width就是内容的宽度
+          设置之后 盒子的width 就等于 内容的真实宽度 + padding + border*/
             box-sizing: border-box;
         }
       p {
         width: 500px;
         height: 50px;
+        padding: 10px;
+        border: 2px solid salmon;
       }
     </style>
   </head>
