@@ -38,7 +38,7 @@
         解决:
         1. 浮动元素后添加一个div元素 并且添加一个类: clear:both  无意义的标签对于搜索引擎来说
         2. 伪元素 .parent::after{ content:'';display:block;clear:both,} 或者专门设置一个类.clearfix
-        3. 给父元素设置overflow:hidden
+        3. 给父元素设置overflow:hidden 但是存在副作用会 不但隐藏溢出部分 还包括padding和border
         */
     </style>
 </head>
