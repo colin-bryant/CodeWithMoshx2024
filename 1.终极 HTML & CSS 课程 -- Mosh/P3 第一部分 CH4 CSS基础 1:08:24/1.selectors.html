@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>selectors</title>
+    <style>
+      p + section {
+        color: yellow;
+      }
+    </style>
   </head>
   <body>
     <!--                         权重  
@@ -12,10 +17,16 @@
         3.  class 属性 伪类选择器   10      a[href*="google"] a[href$=".com"]  a[href^="https"]
         4.  元素 伪元素              1
      -->
-     <!-- 
+    <!-- 
         a b{} a下面的所有b 包括儿子孙子  后代
         a>b{} a下面所有b儿子  子代
-        a+b{} 同级往下相邻 兄弟 · 
+        a+b{} a同级往下相邻 b兄弟 只有一个
+        a~b{} a往下所有同级的兄弟b
       -->
+    <section>1.Lorem ipsum dolor sit amet.</section>
+    <div>3.Lorem ipsum dolor sit amet.</div>
+    <p>2.Lorem ipsum dolor sit amet.</p>
+    <section>4.Lorem ipsum dolor sit amet.</section>
+    <section>5.Lorem ipsum dolor sit amet.</section>
   </body>
 </html>
