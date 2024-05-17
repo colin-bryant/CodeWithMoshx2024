@@ -12,6 +12,15 @@
         /* left:150px  right:200px*/
         .container{
             background-color: gold;
+            padding: 0 200px 0 150px;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100%;
+        }
+        .middle{
+            width: 100%;
+            background-color: green;
         }
 
     </style>
@@ -19,9 +28,9 @@
   <body>
     <header class="header">header</header>
     <div class="container">
-      <div class="center">center</div>
-      <div class="left">left</div>
-      <div class="right">right</div>
+      <div class="box center">center</div>
+      <div class="box left">left</div>
+      <div class="box right">right</div>
     </div>
     <footer class="footer">footer</footer>
   </body>
