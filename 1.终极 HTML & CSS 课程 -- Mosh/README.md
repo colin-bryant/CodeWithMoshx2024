@@ -7,6 +7,7 @@
 3. html entity
 4. upsplash  /  pexels
 5. caniuse  查看兼容性
+6. normalize.css  因为每一个浏览器对于css渲染不同
 
 ## 软件 设计 原则
 
