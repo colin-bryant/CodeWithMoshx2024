@@ -5,3 +5,7 @@
 3. html entity
 4. upsplash  /  pexels
 5. caniuse  查看兼容性
+
+# 软件 设计 原则
+
+1. Separation of Concerns 关注分离点
