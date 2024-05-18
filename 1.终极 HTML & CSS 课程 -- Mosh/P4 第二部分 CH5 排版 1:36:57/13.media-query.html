@@ -7,8 +7,33 @@
     <!-- 媒体查询在不同的设备显示不同的尺寸
      responsive web sites 响应式网站
     -->
+    <style>
+        .container{
+            display: flex;
+            /* 默认主轴方向朝下 */
+            flex-direction: column;
+        }
+        .box{
+            padding: 1rem;
+        }
+        .box-one{
+            background-color: gold;
+        }
+        .box-two{
+            background-color: salmon;
+        }
+        @media screen and (min-width:600px) {
+            .container{
+                flex-direction: row;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box box-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A omnis pariatur distinctio accusantium dolor eveniet, magnam sit repellat ipsum rerum. Officia quia error deserunt veniam velit aspernatur adipisci ut. Nostrum?</div>
+        <div class="box box-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate saepe reprehenderit error dolorem tenetur, qui illo harum molestias est iure voluptatibus incidunt? Eveniet voluptatibus sapiente ea laudantium corporis porro.</div>
+    </div>
 </body>
 </html>
