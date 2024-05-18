@@ -20,10 +20,10 @@
         justify-content: 整个container元素在body里面在主轴上的对齐方式
         align-content:整个container元素在body里在交叉轴上的对齐方式
       -->
-      <!-- 
+    <!-- 
         gap 间隔 row-gap column-gap
        -->
-       <!-- 
+    <!-- 
         作用域子项设置
         grid-row 合并行 grid-row: 1/4  占据1到3之间的区域 可以用来占满一整列
         grid-column 合并列  grid-column : 2 放在第二列  gird-column : 1 / 3 占据1到3之间的区域 可以用来占满一整行  或者是 gird-column:1 / span 2
@@ -32,6 +32,11 @@
          /* 从第一行一列 到第一行三列的区域 */
         grid-area: 1 / 1 / 1/ 3;
         -->
+    <!-- 
+           grid-template-areas:
+            "header header"
+            "sidebar main"; /* 定义网格布局结构 */
+         -->
     <style>
       .container {
         display: grid;
@@ -40,7 +45,7 @@
         grid-template: 100px auto 100px / 30fr 70fr;
         border: 3px solid lightcoral;
         justify-items: stretch;
-        align-items:stretch;
+        align-items: stretch;
         /* justify-content: center;
         align-content: center; */
         height: 90vh;
@@ -52,7 +57,7 @@
         background-color: pink;
         text-align: center;
       }
-      .box-one{
+      .box-one {
         /* 将网格项放置在网格的第2列 */
         /* grid-column: 1/ 3;  */
         grid-column: 1 / span 2;
