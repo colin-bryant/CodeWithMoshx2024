@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>grid</title>
     <!-- 
+        3 行 2 列
+        grid-template:repeat(3,100px) / repeat(2,100px)
         grid-template-rows :行高
-
+        grid-template-columns :列高
      -->
+    <!-- 
+        对齐方式
+        justify-items
+        align-items
+
+        justify-content: 整个container元素在body里面在主轴上的对齐方式
+        align-content:整个container元素在body里在交叉轴上的对齐方式
+      -->
     <style>
-        .container{
-            display: grid;
-            /* 3 * 2 */
-            grid-template-rows:100px 100px 100px ;
-            grid-template-columns: 100px  100px ;
-            border: 3px solid lightcoral;
-        }
+      .container {
+        display: grid;
+        /* 3 * 2 */
+        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        border: 3px solid lightcoral;
+        justify-items: center;
+        align-items:center;
+        justify-content: center;
+
+      }
+      .box {
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+      }
     </style>
-</head>
-<body>
-    <div class="container"></div>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
 </html>
