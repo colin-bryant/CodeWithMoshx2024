@@ -16,16 +16,17 @@
     align-items :  flex-start flex-end center 
 
 
-    align-content:只在容器内有多行内容才起作用 如果不设置 盒子的内容是一排 会被压缩内容
+    align-content:只在容器内有多行内容才起作用
 
-                 
+    flex-warp:nowrap  如果不设置 盒子的内容是一排 会被压缩内容  让它换行          
         */
         .container{
             border: 3px solid lightgrey;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
+            flex-wrap: nowrap;
             height: 50vh;
 
         }
