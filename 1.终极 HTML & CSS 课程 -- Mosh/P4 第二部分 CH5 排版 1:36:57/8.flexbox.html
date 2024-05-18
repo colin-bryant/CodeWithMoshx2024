@@ -8,7 +8,7 @@
       /* 
     row column
     main 主轴   cross 正交轴
-    1. 对齐方式
+    1. 定义在弹性盒子container 父元素上
     justify-content: flex-start flex-end center 
                      space-evenly:所有元素的间隔是一样的
                      space-around:两端元素到主轴两端的距离 是元素之间距离的一半
@@ -18,8 +18,11 @@
 
 
     align-content:只在容器内有多行内容才起作用 定义了有多行（或多列）时，行之间在交叉轴上的对齐方式。
-
-    flex-warp:nowrap  如果不设置wrap 盒子的内容是一排 会被压缩内容  让它换行          
+    
+    flex-warp:nowrap  如果不设置wrap 盒子的内容是一排 会被压缩内容  让它换行   
+    2.定义在弹性盒子内的子元素身上 box-one   
+    align-self:主轴
+    align-iten:交叉轴
         */
       .container {
         border: 3px solid lightgrey;
@@ -37,6 +40,9 @@
         background-color: gold;
         margin: 1rem;
       }
+      .box-one{
+        align-self: flex-start;
+      }
 
       .box1 {
         width: 5rem;
@@ -53,10 +59,10 @@
   <body>
     <!-- flex 居中 -->
     <div class="container">
-      <div class="box">A</div>
+      <div class="box box-one">A</div>
       <div class="box">B</div>
       <div class="box">C</div>
-      <div class="box">D</div>
+      <!-- <div class="box">D</div>
       <div class="box">E</div>
       <div class="box">F</div>
       <div class="box">D</div>
@@ -67,7 +73,7 @@
       <div class="box">F</div>
       <div class="box">D</div>
       <div class="box">E</div>
-      <div class="box">F</div>
+      <div class="box">F</div> -->
     </div>
 
     <!-- margin 居中 -->
