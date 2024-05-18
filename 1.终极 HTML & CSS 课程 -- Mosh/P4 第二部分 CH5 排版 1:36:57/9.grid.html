@@ -6,9 +6,10 @@
     <title>grid</title>
     <!-- 
         3 行 2 列
-        grid-template:repeat(3,100px) / repeat(2,100px)
-        grid-template: repeat(3, 100px) / 30% 70%; 列按比例分配一整个container的宽度
-
+        grid-template:repeat( 3,100px) / repeat(2,100px)  分配容器宽度的百分比  
+       如果 grid-template: repeat(3, 100px) /100px  30% 70%; 就会被溢出 所以应该是fr单位
+       grid-template: repeat(3, 100px) /100px  30fr 70fr; fr 分配剩余可用空间的百分比
+        如果设置
         grid-template-rows :行高
         grid-template-columns :列高
      -->
@@ -24,18 +25,18 @@
         display: grid;
         /* 3 * 2 */
         /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
-        grid-template: repeat(3, 100px) / 30% 70%;
+        grid-template: repeat(3, 100px) / 100px 30fr 70fr;
         border: 3px solid lightcoral;
-        justify-items: center;
-        align-items:center;
+        justify-items: stretch;
+        align-items:stretch;
         /* justify-content: center;
         align-content: center; */
         height: 90vh;
 
       }
       .box {
-        width: 5rem;
-        height: 5rem;
+        /* width: 5rem;
+        height: 5rem; */
         background-color: pink;
         text-align: center;
        
