@@ -24,9 +24,11 @@
         gap 间隔 row-gap column-gap
        -->
        <!-- 
-        grid-row
-        grid-column
-        gird-area
+        作用域子项设置
+        grid-row 合并行 
+        grid-column 合并列
+        gird-area:用于指定一个网格项占据的区 或者说合并区域:
+        gird-area:grid-row-start, grid-column-start, grid-row-end, grid-column-end
         -->
     <style>
       .container {
@@ -47,14 +49,15 @@
         height: 5rem; */
         background-color: pink;
         text-align: center;
-       
-        
+      }
+      .box-one{
+        grid-column: 2;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="box">朱</div>
+      <div class="box box-one">朱</div>
       <div class="box">凤</div>
       <div class="box">琴</div>
       <div class="box">🐷</div>
