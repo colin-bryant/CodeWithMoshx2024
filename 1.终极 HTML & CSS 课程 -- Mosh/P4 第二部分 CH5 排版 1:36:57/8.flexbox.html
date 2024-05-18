@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex</title>
     <style>
-        /* 
+      /* 
     row column
     main 主轴   cross 正交轴
     1. 对齐方式
@@ -20,60 +20,57 @@
 
     flex-warp:nowrap  如果不设置 盒子的内容是一排 会被压缩内容  让它换行          
         */
-        .container{
-            border: 3px solid lightgrey;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: nowrap;
-            height: 50vh;
+      .container {
+        border: 3px solid lightgrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 50vh;
+      }
+      .box {
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+        margin: 1rem;
+      }
 
-        }
-        .box{
-            width: 5rem;
-            height: 5rem;
-            background-color: gold;
-            margin: 1rem;
-        }
- 
-
-        .box1{
-            width: 5rem;
-            height: 5rem;
-            background-color: gold;
-            margin: 0 auto;
-        }
-        .container1{
-            margin-top: 5rem;
-            border: 3px solid lightgrey;
-        }
+      .box1 {
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+        margin: 0 auto;
+      }
+      .container1 {
+        margin-top: 5rem;
+        border: 3px solid lightgrey;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- flex 居中 -->
     <div class="container">
-        <div class="box">A</div>
-        <div class="box">B</div>
-        <div class="box">C</div>
-        <div class="box">D</div>
-        <div class="box">E</div>
-        <div class="box">F</div>
-        <div class="box">D</div>
-        <div class="box">E</div>
-        <div class="box">F</div>
-        <div class="box">D</div>
-        <div class="box">E</div>
-        <div class="box">F</div>
-        <div class="box">D</div>
-        <div class="box">E</div>
-        <div class="box">F</div>
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
     </div>
 
     <!-- margin 居中 -->
-     <div class="container1">
-         <div class="box1">C</div>
-     </div>
-    
-</body>
+    <div class="container1">
+      <div class="box1">C</div>
+    </div>
+  </body>
 </html>
