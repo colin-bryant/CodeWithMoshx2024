@@ -25,7 +25,11 @@
         align-item的属性也会覆盖
     align-self:用于设置单个子项在交叉轴上的对齐方式
         */
-
+    /* 
+        大小  sizing items 也是设置在子元素盒子上的
+        flex: flex-basis (大小),flex-grow(弹性增长系数),flex-shrink(弹性收缩系数)
+        flex-basis:auto(参考宽度的值)
+    */
 
       .container {
         border: 3px solid lightgrey;
@@ -44,7 +48,8 @@
         margin: 1rem;
       }
       .box-one{
-        align-self: flex-start;
+        /* align-self: flex-start; */
+        flex-basis:au
     
       }
 
