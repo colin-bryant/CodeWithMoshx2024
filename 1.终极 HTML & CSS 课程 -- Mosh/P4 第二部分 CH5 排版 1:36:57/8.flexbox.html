@@ -30,8 +30,10 @@
         flex: flex-basis (大小),flex-grow(弹性增长系数),flex-shrink(弹性收缩系数)
         flex-basis:auto(参考宽度的值) 
         flex-basis:10rem 如果 flex-direction: row; 会覆盖盒子宽度的值 如果是column 会覆盖高度的值
-        flex-grow:定义了一个 flex 项目在父容器中的剩余空间中占据的比例。
+        flex-grow:定义了一个 flex 项目在父容器中的剩余空间中占据的比例。默认 0
         关于这个剩余空间的解释:如果 a:2 b:1 c:1  那么a分配的空间就是2/4 最后加上自己的所占的内容的大小
+        flex-shrink:定义了一个 flex 项目在父容器空间不足时如何缩小的比例,你拉动窗口看看。默认1
+        当值为0的时候 就不会缩减
     */
 
       .container {
@@ -45,8 +47,9 @@
         /* align-content: center; */
       }
       .box {
-        flex-basis: 5rem;
-        flex-grow: 1;
+        flex-basis: 15rem;
+        /* flex-grow: 1; */
+        flex-shrink: 1;
         width: 5rem;
         height: 5rem;
         background-color: gold;
@@ -55,6 +58,7 @@
       .box-one{
         /* align-self: flex-start; */
         flex-grow: 0;
+        flex-shrink: 0;
       }
 
       .box1 {
