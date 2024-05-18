@@ -23,19 +23,24 @@
       <!-- 
         gap 间隔 row-gap column-gap
        -->
+       <!-- 
+        grid-row
+        grid-column
+        gird-area
+        -->
     <style>
       .container {
         display: grid;
         /* 3 * 2 */
         /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
-        grid-template: repeat(3, 100px) / 100px 30fr 70fr;
+        grid-template: 100px auto 100px / 30fr 70fr;
         border: 3px solid lightcoral;
         justify-items: stretch;
         align-items:stretch;
         /* justify-content: center;
         align-content: center; */
         height: 90vh;
-
+        gap: 10px;
       }
       .box {
         /* width: 5rem;
