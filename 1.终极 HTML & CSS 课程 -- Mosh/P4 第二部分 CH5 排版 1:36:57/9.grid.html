@@ -7,14 +7,15 @@
     <!-- 
         3 行 2 列
         grid-template:repeat(3,100px) / repeat(2,100px)
+        grid-template: repeat(3, 100px) / 30% 70%; 列按比例分配一整个container的宽度
+
         grid-template-rows :行高
         grid-template-columns :列高
      -->
     <!-- 
         对齐方式
-        justify-items
-        align-items
-
+        justify-items 默认是stretch 如果没有宽度就会拉伸
+        align-items 默认是stretch 如果没有高度就会拉伸
         justify-content: 整个container元素在body里面在主轴上的对齐方式
         align-content:整个container元素在body里在交叉轴上的对齐方式
       -->
@@ -22,12 +23,13 @@
       .container {
         display: grid;
         /* 3 * 2 */
-        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
+        grid-template: repeat(3, 100px) / 30% 70%;
         border: 3px solid lightcoral;
         justify-items: center;
         align-items:center;
-        justify-content: center;
-        align-content: center;
+        /* justify-content: center;
+        align-content: center; */
         height: 90vh;
 
       }
