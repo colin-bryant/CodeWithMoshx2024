@@ -6,16 +6,20 @@
     <title>Flex</title>
     <style>
         /* 
-        row column
-        main 主轴   cross 正交轴
-        1. 对齐方式
-        justify-content
-        align-items
+    row column
+    main 主轴   cross 正交轴
+    1. 对齐方式
+    justify-content: flex-start flex-end center 
+                     space-evenly:所有元素的间隔是一样的
+                     space-around
+                     space-between:所有元素的间隔是一样的,而且两端元素会紧贴主轴的两端
+    align-items
         */
         .container{
             border: 3px solid lightgrey;
             display: flex;
             flex-direction: row;
+            justify-content: center;
 
         }
         .box{
@@ -24,7 +28,7 @@
             background-color: gold;
             margin: 1rem;
         }
-
+ 
 
         .box1{
             width: 5rem;
