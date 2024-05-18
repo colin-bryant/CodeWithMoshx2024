@@ -8,6 +8,7 @@
       /* 
     row column
     main 主轴   cross 正交轴
+    1.对齐方式
     1. 定义在弹性盒子container 父元素上
     justify-content: flex-start flex-end center 
                      space-evenly:所有元素的间隔是一样的
@@ -21,10 +22,11 @@
     
     flex-warp:nowrap  如果不设置wrap 盒子的内容是一排 会被压缩内容  让它换行   
     2.定义在弹性盒子内的子元素身上 box-one   所有要删除align-content的设置 
-        属性也会覆盖
-    align-self:主轴
-    align-item:交叉轴
+        align-item的属性也会覆盖
+    align-self:用于设置单个子项在交叉轴上的对齐方式
         */
+
+
       .container {
         border: 3px solid lightgrey;
         display: flex;
@@ -43,6 +45,7 @@
       }
       .box-one{
         align-self: flex-start;
+    
       }
 
       .box1 {
