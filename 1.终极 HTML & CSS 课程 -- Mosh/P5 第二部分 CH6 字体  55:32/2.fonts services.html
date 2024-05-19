@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>font-family</title>
     <style>
       /* 
@@ -36,7 +42,7 @@
             optional: 更加严格如果自定义字体未能在非常短的时间内加载，则继续使用后备字体，不再切换,意味着速度如果慢了一点 这个页面就永远不会再使用你的自定义字体
         */
 
-        /* 
+      /* 
           fonts services: 免费和付费
           Google Web Fonts
           Adobe Fonts 
@@ -44,28 +50,9 @@
           fontdeck.com
         */
 
-      @font-face {
-        font-family: "open_sans";
-        src: url("fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
-          url("fonts/open-sans/opensans-bold-webfont.woff") format("woff");
-        font-weight: bold;
-        font-style: normal;
-        font-display: optional;
-      }
-
-      @font-face { 
-        font-family: "open_sans";
-        src: url("fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"),
-          url("fonts/open-sans/opensans-regular-webfont.woff") format("woff");
-        font-weight: normal;
-        font-style: normal;
-        font-display:optional;
-;
-
-      }
       body {
         margin: 10px;
-        font-family: 'open_sans',Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-family: "open_sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
       }
       p {
         /* font-weight: bolder;
