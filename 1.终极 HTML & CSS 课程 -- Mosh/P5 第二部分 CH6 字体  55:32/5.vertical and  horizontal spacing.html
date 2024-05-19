@@ -18,8 +18,8 @@
          文字排版   
             text-align
             text-indent
-            text-decoration
-            text-transform  大小写
+            text-decoration line-throught
+            text-transform  大小写 capitalize
             white-space  空白
             column-*  多列文本
             direction 从右向左阅读
@@ -40,9 +40,11 @@
          }
          p + p{
             font-size: 1rem;
-            width: 50ch;
+            /* width: 50ch; */
             text-align: left;
             text-indent: 1rem;
+            text-decoration:line-through;
+            text-transform: capitalize;
          }
     </style>
 </head>
