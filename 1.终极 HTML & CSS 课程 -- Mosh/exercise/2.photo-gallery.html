@@ -14,16 +14,6 @@
             width: 100%;
             object-fit: cover;
         }
-        @media screen and (min-width:768px){
-            ul{
-                display: grid;
-                grid-template:  repeat(5,auto) / 1fr 1fr 1fr;
-               gap: 4px;
-            }
-            li{
-            font-size: 0;
-         }
-        }
         @media screen and (min-width:1024px){
             ul{
                 display: grid;
@@ -35,6 +25,16 @@
          }
          .special{
             grid-area: span 2 /span 2;
+         }
+        }
+        @media screen and (min-width:768px){
+            ul{
+                display: grid;
+                grid-template:  repeat(5,auto) / 1fr 1fr 1fr;
+               gap: 4px;
+            }
+            li{
+            font-size: 0;
          }
         }
      </style>
