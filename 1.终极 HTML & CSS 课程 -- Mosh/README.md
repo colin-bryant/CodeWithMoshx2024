@@ -11,7 +11,7 @@
 7. color picker
 8. css gradient
 9. css shapes  css-tricks.com
-10.type-scale.com 
+10.type-scale.com  不同元素的尺寸应该如何设置比较合适
 
 ## 软件 设计 原则
 
