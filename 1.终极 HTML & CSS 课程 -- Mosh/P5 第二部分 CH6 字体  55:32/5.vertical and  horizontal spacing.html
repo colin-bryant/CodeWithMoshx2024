@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>垂直空间</title>
     <style>
-         /* 
+      /* 
          水平空间
          1. law of Proximity 相关内容应该互相挨在一起 上外边距 大于下外边距
          2. line-height 如果没有单位字体大小的倍数
@@ -27,48 +27,89 @@
             direction 从右向左阅读
             overflow-wrap: break-word;
          */
-         body {
-            margin:10px;
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 1rem;
-            line-height:1.5 ;
-            letter-spacing: 1px;
-            word-spacing: 2px;
-         }
-         h1,h2,h3,h4,h5,h6{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-         }
-         h1{
-            margin: 3rem 0 1rem 0;
-         }
-         p + p{
-            font-size: 1rem;
-         
-            text-align: left;
-            text-indent: 1rem;
-            text-decoration:line-through;
-            text-transform: capitalize;
+      body {
+        margin: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h1 {
+        margin: 3rem 0 1rem 0;
+      }
+      p + p {
+        font-size: 1rem;
 
-            border: 3px solid salmon;
-            /* 截断文字 */
-            width: 50ch;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-         }
+        text-align: left;
+        text-indent: 1rem;
+        text-decoration: line-through;
+        text-transform: capitalize;
+
+        border: 3px solid salmon;
+        /* 截断文字 */
+        width: 50ch;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-clamp: 3;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Heading</h1>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus doloremque debitis, omnis natus quod rem assumenda inventore magnam temporibus, sequi fugit ab enim quaerat, eligendi deleniti maiores. Dicta dolor hic neque qui laudantium enim velit. Nam praesentium magni iure ea aspernatur! Blanditiis eveniet, delectus officiis harum amet, aut possimus voluptas veritatis vel dicta quia iure voluptates provident sapiente, doloremque ad voluptatem reprehenderit enim non modi aperiam impedit consectetur ex? Quia hic, saepe alias similique architecto, reprehenderit neque totam laudantium fugit nulla sint voluptas obcaecati sit eligendi maxime? Possimus dolorem voluptatibus amet perferendis, dicta reprehenderit repellendus. Exercitationem consectetur dolorum perspiciatis?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus
+      doloremque debitis, omnis natus quod rem assumenda inventore magnam
+      temporibus, sequi fugit ab enim quaerat, eligendi deleniti maiores. Dicta
+      dolor hic neque qui laudantium enim velit. Nam praesentium magni iure ea
+      aspernatur! Blanditiis eveniet, delectus officiis harum amet, aut possimus
+      voluptas veritatis vel dicta quia iure voluptates provident sapiente,
+      doloremque ad voluptatem reprehenderit enim non modi aperiam impedit
+      consectetur ex? Quia hic, saepe alias similique architecto, reprehenderit
+      neque totam laudantium fugit nulla sint voluptas obcaecati sit eligendi
+      maxime? Possimus dolorem voluptatibus amet perferendis, dicta
+      reprehenderit repellendus. Exercitationem consectetur dolorum
+      perspiciatis?
     </p>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus doloremque debitis, omnis natus quod rem assumenda inventore magnam temporibus, sequi fugit ab enim quaerat, eligendi deleniti maiores. Dicta dolor hic neque qui laudantium enim velit. Nam praesentium magni iure ea aspernatur! Blanditiis eveniet, delectus officiis harum amet, aut possimus voluptas veritatis vel dicta quia iure voluptates provident sapiente, doloremque ad voluptatem reprehenderit enim non modi aperiam impedit consectetur ex? Quia hic, saepe alias similique architecto, reprehenderit neque totam laudantium fugit nulla sint voluptas obcaecati sit eligendi maxime? Possimus dolorem voluptatibus amet perferendis, dicta reprehenderit repellendus. Exercitationem consectetur dolorum perspiciatis?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus
+      doloremque debitis, omnis natus quod rem assumenda inventore magnam
+      temporibus, sequi fugit ab enim quaerat, eligendi deleniti maiores. Dicta
+      dolor hic neque qui laudantium enim velit. Nam praesentium magni iure ea
+      aspernatur! Blanditiis eveniet, delectus officiis harum amet, aut possimus
+      voluptas veritatis vel dicta quia iure voluptates provident sapiente,
+      doloremque ad voluptatem reprehenderit enim non modi aperiam impedit
+      consectetur ex? Quia hic, saepe alias similique architecto, reprehenderit
+      neque totam laudantium fugit nulla sint voluptas obcaecati sit eligendi
+      maxime? Possimus dolorem voluptatibus amet perferendis, dicta
+      reprehenderit repellendus. Exercitationem consectetur dolorum
+      perspiciatis?
     </p>
     <h1>Heading</h1>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus doloremque debitis, omnis natus quod rem assumenda inventore magnam temporibus, sequi fugit ab enim quaerat, eligendi deleniti maiores. Dicta dolor hic neque qui laudantium enim velit. Nam praesentium magni iure ea aspernatur! Blanditiis eveniet, delectus officiis harum amet, aut possimus voluptas veritatis vel dicta quia iure voluptates provident sapiente, doloremque ad voluptatem reprehenderit enim non modi aperiam impedit consectetur ex? Quia hic, saepe alias similique architecto, reprehenderit neque totam laudantium fugit nulla sint voluptas obcaecati sit eligendi maxime? Possimus dolorem voluptatibus amet perferendis, dicta reprehenderit repellendus. Exercitationem consectetur dolorum perspiciatis?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus
+      doloremque debitis, omnis natus quod rem assumenda inventore magnam
+      temporibus, sequi fugit ab enim quaerat, eligendi deleniti maiores. Dicta
+      dolor hic neque qui laudantium enim velit. Nam praesentium magni iure ea
+      aspernatur! Blanditiis eveniet, delectus officiis harum amet, aut possimus
+      voluptas veritatis vel dicta quia iure voluptates provident sapiente,
+      doloremque ad voluptatem reprehenderit enim non modi aperiam impedit
+      consectetur ex? Quia hic, saepe alias similique architecto, reprehenderit
+      neque totam laudantium fugit nulla sint voluptas obcaecati sit eligendi
+      maxime? Possimus dolorem voluptatibus amet perferendis, dicta
+      reprehenderit repellendus. Exercitationem consectetur dolorum
+      perspiciatis?
     </p>
-</body>
+  </body>
 </html>
