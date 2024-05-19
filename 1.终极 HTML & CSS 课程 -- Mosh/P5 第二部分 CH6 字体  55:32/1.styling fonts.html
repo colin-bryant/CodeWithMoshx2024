@@ -31,8 +31,8 @@
          开发者工具 disable cache
             font-display : auto swap fallback
             block 先隐藏文件
-            fallback : 如果很短时间没有 下载完字体 就会一直用默认字体
-            optinoal
+            fallback : 如果很短时间没有 下载完字体 就会一直用默认字体 但是还会切换
+            optional: 如果自定义字体未能在非常短的时间内加载，则继续使用后备字体，不再切换。
         */
 
       @font-face {
@@ -41,7 +41,7 @@
           url("fonts/open-sans/opensans-bold-webfont.woff") format("woff");
         font-weight: bold;
         font-style: normal;
-        font-display: fallback;
+        font-display: optional;
       }
 
       @font-face { 
@@ -50,7 +50,8 @@
           url("fonts/open-sans/opensans-regular-webfont.woff") format("woff");
         font-weight: normal;
         font-style: normal;
-        font-display: fallback;
+        font-display:optional;
+;
 
       }
       body {
