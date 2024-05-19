@@ -17,7 +17,7 @@
         @media screen and (min-width:768px){
             ul{
                 display: grid;
-                grid-template:  repeat(5,auto) / 50fr 50fr;
+                grid-template:  repeat(5,auto) / 1fr 1fr 1fr;
                gap: 4px;
             }
             li{
@@ -33,6 +33,9 @@
             li{
             font-size: 0;
          }
+         .special{
+            grid-area: span 2 /span 2;
+         }
         }
      </style>
 </head>
@@ -41,7 +44,7 @@
         <ul>
             <li><img src=" https://
 source.unsplash.com/collection/190727/800x600?1" alt=""></li>
-            <li><img src=" https://
+            <li class="special">  <img src=" https://
 source.unsplash.com/collection/190727/800x600?2" alt=""></li>
             <li><img src=" https://
 source.unsplash.com/collection/190727/800x600?3" alt=""></li>
