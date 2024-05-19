@@ -29,7 +29,9 @@
         转换字体  Webfont generator 
         4. flash of Unstyled text  无样式字体闪现
          开发者工具 disable cache
-            font-display
+            font-display : auto swap fallback
+
+            fallback : 如果很短时间没有 下载完字体 就会一直用默认字体
         */
 
       @font-face {
@@ -38,6 +40,7 @@
           url("fonts/open-sans/opensans-bold-webfont.woff") format("woff");
         font-weight: bold;
         font-style: normal;
+        font-display: fallback;
       }
 
       @font-face { 
@@ -46,6 +49,8 @@
           url("fonts/open-sans/opensans-regular-webfont.woff") format("woff");
         font-weight: normal;
         font-style: normal;
+        font-display: fallback;
+
       }
       body {
         margin: 10px;
