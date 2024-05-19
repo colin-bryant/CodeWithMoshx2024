@@ -33,17 +33,17 @@
             swap 使用后备字体渲染文本，直到自定义字体加载完成，再进行切换。这种方式可以有效减少闪烁。
             block 先隐藏文件
             fallback : 使用后备字体渲染文本，如果自定义字体在短时间内（通常约100ms至3s）加载完成，则切换到自定义字体，否则保持使用后备字体。 
-            optional: 如果自定义字体未能在非常短的时间内加载，则继续使用后备字体，不再切换。
+            optional: 更加严格如果自定义字体未能在非常短的时间内加载，则继续使用后备字体，不再切换,意味着速度如果慢了一点 这个页面就
         */
 
-      /* @font-face {
+      @font-face {
         font-family: "open_sans";
         src: url("fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
           url("fonts/open-sans/opensans-bold-webfont.woff") format("woff");
         font-weight: bold;
         font-style: normal;
         font-display: optional;
-      } */
+      }
 
       @font-face { 
         font-family: "open_sans";
